@@ -1,1 +1,78 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Us | Ironform Demo</title><meta name="description" content="Gym website demonstration by GrowthSathi."><link rel="stylesheet" href="assets/styles.css"></head><body><header class="top"><div class="wrap nav"><a class="brand" href="index.html">IRON<b>FORM</b> <small style="display:block;color:#a9b8ae;font:600 9px DM Sans;letter-spacing:2px">FITNESS STUDIO · DEMO</small></a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav><a class="btn" href="contact.html">Enquire ↗</a></div></header><main><section class="page"><div class="wrap"><div class="kicker">CONTACT US</div><h1>Let's talk about<br><span>your next session.</span></h1><p class="lead">Have a question about facilities, services or membership options? Reach out directly.</p></div></section><section class="section"><div class="wrap split"><div><h2>We'd be happy to help.</h2><p class="muted">Replace these demo contact details with approved information.</p><p>⌖ Your gym address, city<br>☎ +91 90000 00000<br>◷ Add confirmed opening hours</p><a class="btn" href="https://wa.me/919000000000?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20gym." target="_blank" rel="noopener">WhatsApp the gym ↗</a><p class="note">Demo number only. Replace before presenting as a live client configuration.</p></div><div class="card"><h3>Map location</h3><p class="muted">Add Google Maps using the client's confirmed business location.</p></div></div></section></main><footer class="footer"><div class="wrap"><strong>IRONFORM FITNESS STUDIO</strong><br>Fictional demo identity · Replace with client-approved information<br>Website concept by GrowthSathi</div></footer><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | Ironform Demo</title>
+  <meta name="description" content="Contact Ironform Fitness Studio to ask about memberships, facilities and training options.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">IRON<b>FORM</b> <small style="display:block;color:#a9b8ae;font:600 9px DM Sans;letter-spacing:2px">FITNESS STUDIO · DEMO</small></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="gallery.html">Gallery</a><a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="btn" href="#enquiry-form">Enquire ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="wrap">
+        <div class="kicker">CONTACT US</div>
+        <h1>Let's talk about<br><span>your next session.</span></h1>
+        <p class="lead">Have a question about facilities, services or membership options? Send an enquiry and the team can help you take the next step.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>We'd be happy to help.</h2>
+          <p class="muted">Choose the quickest way to reach the team. The details below are placeholders for this GrowthSathi demonstration.</p>
+          <p>⌖ Your gym address, city<br>☎ +91 90000 00000<br>◷ Add confirmed opening hours</p>
+          <a class="btn" href="https://wa.me/919000000000?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20gym." target="_blank" rel="noopener noreferrer">WhatsApp the gym ↗</a>
+          <p class="note">Demo number only. Replace it with the client's approved WhatsApp number before launch.</p>
+        </div>
+
+        <div class="card" id="enquiry-form">
+          <h3>Send an enquiry</h3>
+          <p class="muted">Complete the form. We'll prepare a message in WhatsApp for you to review and send.</p>
+          <form class="form" id="enquiry" novalidate>
+            <label for="name">Your name
+              <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+            </label>
+            <label for="phone">Mobile number
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" maxlength="16" required>
+            </label>
+            <label for="interest">What are you interested in?
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="Membership information">Membership information</option>
+                <option value="Class timetable">Class timetable</option>
+                <option value="Personal training">Personal training</option>
+                <option value="Facilities and services">Facilities and services</option>
+                <option value="Other enquiry">Something else</option>
+              </select>
+            </label>
+            <label for="message">Message (optional)
+              <textarea id="message" name="message" maxlength="500" placeholder="Tell us what you'd like to know..."></textarea>
+            </label>
+            <button class="btn" type="submit">Continue to WhatsApp ↗</button>
+            <p class="status" id="status" role="status" aria-live="polite"></p>
+            <a class="note" id="whatsapp-fallback" href="#" target="_blank" rel="noopener noreferrer" hidden>Open WhatsApp manually ↗</a>
+          </form>
+          <p class="note">This demo does not store form submissions. WhatsApp opens with a pre-filled message; the visitor must tap Send.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><strong>IRONFORM FITNESS STUDIO</strong><br>Fictional demo identity · Replace with client-approved information<br>Website concept by GrowthSathi</div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
