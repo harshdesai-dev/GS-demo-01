@@ -65,3 +65,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+// Mobile navigation (kept separate from the enquiry-form handler).
+document.addEventListener('DOMContentLoaded', () => {
+  const navContainer = document.querySelector('.nav');
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.getElementById('primary-nav');
+
+  if (!navContainer || !menuButton || !navigation) return;
+
+  const closeMenu = () => {
+    navContainer.classList.remove('nav-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Open navigation');
+  };
+
+  menuButton.addEventListener('click', () => {
+    const isOpen = navContainer.classList.toggle('nav-open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  });
+
+  navigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) closeMenu();
+  });
+});
