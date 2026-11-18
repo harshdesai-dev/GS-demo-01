@@ -86,3 +86,26 @@
     transition: none;
   }
 }
+
+
+/* Accessibility and conversion refinements */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 20;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--ink);
+  font-weight: 700;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.primary-nav a[aria-current="page"] {
+  color: var(--accent);
+}
